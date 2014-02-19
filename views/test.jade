@@ -3,7 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p Below you can see text generated with RactiveJS.
   <div id="container"></div>
   script(id="ractiveTemplate" type="text/ractive")
     {{greeting}} {{who}}!
+  
+    p What's your name?
+      input(value="{{who}}")

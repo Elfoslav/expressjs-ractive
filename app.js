@@ -13,8 +13,8 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3700);
-//app.set('views', __dirname + '/views');
-//app.set('view engine', 'jade');
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
@@ -27,7 +27,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-//app.get('/', routes.index);
+app.get('/', routes.index);
+app.get('/test', function(req, res){
+  res.render('test', { title: 'Express test page' });
+});
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

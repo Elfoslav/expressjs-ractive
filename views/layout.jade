@@ -1,7 +1,17 @@
-doctype 5
+doctype html
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/js/lib/Ractive.js')
   body
+    nav
+      a(href='/') home
+      span &nbsp;|&nbsp;
+      a(href='/test') test
+      span &nbsp;|&nbsp;
+      a(href='/index.html') static
+    
     block content
+    
+    script(src='/js/main.js')

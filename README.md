@@ -9,4 +9,6 @@ Then run:
 
     node app.js
     
-Main HTML is in /public/index.html
+And navigate your browser to:
+
+    http://localhost:3700/
