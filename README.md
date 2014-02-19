@@ -8,3 +8,5 @@ Download this repo and install the app:
 Then run:
 
     node app.js
+    
+Main HTML is in /public/index.html
