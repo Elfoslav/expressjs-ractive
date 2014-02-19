@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello world - ExpressJS with RactiveJS</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/users">Users</a>
+    </nav>
+    <h1>Hello world - ExpressJS with RactiveJS</h1>
+    
+    <div id="container"></div>
+    <script id="ractiveTemplate" type="text/ractive">
+      {{greeting}} {{who}}!
+    </script>
+    
+    <p>Now how to create layout (header, content, footer)? And change only content when URL is changed.</p>
+    
+    <script src="/js/lib/Ractive.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
