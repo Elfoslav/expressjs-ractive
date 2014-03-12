@@ -7,3 +7,6 @@ block content
   <div id="container"></div>
   script(id="ractiveTemplate" type="text/ractive")
     {{greeting}} {{who}}!
+    p {{#loggedIn}}
+        p you are logged in
+      {{/loggedIn}}
